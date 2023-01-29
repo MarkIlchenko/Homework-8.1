@@ -1,7 +1,7 @@
 
 function swap(arr, xp, yp)
 {
-    var temp = arr[xp];
+    let temp = arr[xp];
     arr[xp] = arr[yp];
     arr[yp] = temp;
 }
@@ -9,8 +9,8 @@ function partSort(arr , N , a , b)
 {
 
 
-    var l = Math.min(a, b);
-    var r = Math.max(a, b);
+    let l = Math.min(a, b);
+    let r = Math.max(a, b);
 
 
     var i, j;
@@ -32,10 +32,16 @@ function partSort(arr , N , a , b)
         document.write(arr[i] + " ");
 }
 
+let usNum1 = prompt("Enter your number: ");
+let usNum2 = prompt("Enter your number: ");
+let usNum3 = prompt("Enter your number: ");
+let usNum4 = prompt("Enter your number: ");
+let usNum5 = prompt("Enter your number: ");
 
-var arr = [ 7, 8, 4, 5, 2 ];
-var a = 0, b = 4;
-var N = arr.length;
+
+let arr = [ usNum1, usNum2, usNum3, usNum4, usNum5 ];
+let a = 0, b = 4;
+let N = arr.length;
 partSort(arr, N, a, b);
 
 
